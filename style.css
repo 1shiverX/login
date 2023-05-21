@@ -1,0 +1,144 @@
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+  }
+
+body{
+    background-color: #191816;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+}
+
+.side{
+    width: 50%;
+    height: 617px;
+    margin-left: 185px;
+}
+.box{
+    background-color: #24221f;
+    width: 500px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #afb6c2;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12%;
+}
+
+.log_name{
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+}
+
+h1{
+    color: #d4ccb6;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+p{
+    margin-bottom: 10%;
+}
+a{
+    text-decoration: none;
+    color: #ffc632;
+
+}
+.check{
+    display: flex;
+    width: 85%;
+}
+
+.esqueci{
+    margin-left: 24vh;
+}
+.registrar{
+    margin-top: 25px;
+}
+
+.inputs{
+    width: 80%;
+    height: 10%;
+    background-color: transparent;
+    border: 2px solid #afb6c2;
+    margin-bottom: 2%;
+    border-radius: 3px;
+    padding-left:2% ;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #ffc632;
+    outline: none;
+  }
+
+
+.labels{
+    width: 82%;
+    margin-bottom: 1%;
+}
+
+
+button{
+    width: 85%;
+    height: 10%;
+    background-color: #ffc632;
+    margin-top: 10px;
+    border-color: transparent;
+    font-size: 1.2rem;
+    color: #24221f;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #f7d47b;
+}
+
+@media screen and (max-width:820px) {
+
+    main{
+        margin: 0 auto;
+    }
+    .side{
+        display:none;
+    }
+
+    .box{
+        margin-top: 50px;
+        width: 550px;
+        height: 500px;
+    }
+
+    
+    .esqueci{
+        margin-left: 15vh;
+    }
+}
+
+@media (max-width:600px){
+    main{
+        margin: 0 auto;
+    }
+    
+    .box{
+        background-color:#191816;
+    }
+
+    .esqueci{
+        margin-left: 22vh;
+    }
+}
